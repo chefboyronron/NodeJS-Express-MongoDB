@@ -1,4 +1,3 @@
 # NodeJS-Express
 
-1. Setup Local Environment
-    [I'm an inline-style link](https://www.google.com)
+1. [Setup Local Environment](https://github.com/chefboyronron/NodeJS-Express/tree/main/setup-environment)
