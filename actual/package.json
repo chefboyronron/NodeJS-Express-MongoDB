@@ -4,11 +4,17 @@
   "description": "Simple knowledgebase app",
   "main": "app.js",
   "scripts": {
+    "sample_express_route": "node ./scripts/sample-express-route",
+    "hello_world": "node ./scripts/hello-world",
+    "ejs_template": "node ./scripts/ejs-template",
+    "express_middleware": "node ./scripts/express-middleware",
+    "express_route_mw": "node ./scripts/route-mw",
     "dev": "node app"
   },
   "author": "Ron Seminiano",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
 }
