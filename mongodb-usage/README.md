@@ -6,6 +6,7 @@ MongoDB | RDB
 --- | ---
 Collection | Table
 Documents | Records
+Fields | Columns
 
 1. Open Mongodb CLI
 
@@ -64,4 +65,4 @@ Rename | `db.{COLLECTION_NAME}.update({ _id: ObjectId('VALUE') }, { $rename : { 
 
 Command |
 --- |
-`db.{COLLECTION_NAME}.createIndex({ {FIELD_NAME}: 'text' })` | 
+`db.{COLLECTION_NAME}.createIndex({ {FIELD_NAME}: '{DATA_TYPE}' })` | 
