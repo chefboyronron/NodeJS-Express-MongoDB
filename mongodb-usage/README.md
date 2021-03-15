@@ -4,8 +4,8 @@
 
 Command | 
 --- | 
-:> cd C:/{PATH OF MONGODB DIR}/bin | 
-:> mongo
+`cd C:/{PATH OF MONGODB DIR}/bin` | 
+`mongo` |
 
 NOTE: make sure mongodb is running.
 
@@ -13,5 +13,5 @@ NOTE: make sure mongodb is running.
 
 Command | 
 --- | 
-:> use {database name} |
+`use {database name}` |
 
