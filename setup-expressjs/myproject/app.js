@@ -4,7 +4,7 @@ const app = express();
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', (req, res) => {
-    res.send('Hello wirld');
+    res.send('Hello world');
 });
 
 // This will start the web server in port 3000
