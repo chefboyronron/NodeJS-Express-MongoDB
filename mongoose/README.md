@@ -31,7 +31,7 @@ db.articles.find().pretty()
     - FOR MORE INFO visit: [MongooseJS Page](https://mongoosejs.com/)
 
 2. Create Schema
-    - [Article Scehma](https://mongoosejs.com/)
+    - [Article Scehma](https://github.com/chefboyronron/NodeJS-Express/blob/master/actual/models/article.js)
 
 3. Connect to MongoDB
 
@@ -58,13 +58,10 @@ db.on('error', (err) => {
 
 1. Create models directory on your app directory
 2. Create articles.js file
-3. You can check this in actual file content
-    - [MongooseJS Page](https://mongoosejs.com/)
-4. Including Models
-```javascript
-let Article = require('./models/article');
-```
+3. You can check this in actual file content for including model
+    - [The Functionalities](https://github.com/chefboyronron/NodeJS-Express/blob/master/actual/scripts/nodedb/app.js)
 
-## The File
-1. [MongooseJS Page](https://mongoosejs.com/)
-    - This may include the CRUD functionality of the app using MongoDB in the future.
+## The Files
+1. [app.js](https://github.com/chefboyronron/NodeJS-Express/blob/master/actual/scripts/nodedb/app.js)
+2. [article model](https://github.com/chefboyronron/NodeJS-Express/blob/master/actual/models/article.js)
+3. [template - ejs](https://github.com/chefboyronron/NodeJS-Express/blob/master/actual/views/nodedb/index.ejs)
