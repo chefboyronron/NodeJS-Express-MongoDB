@@ -66,3 +66,20 @@ Rename | `db.{COLLECTION_NAME}.update({ _id: ObjectId('VALUE') }, { $rename : { 
 Command |
 --- |
 `db.{COLLECTION_NAME}.createIndex({ {FIELD_NAME}: '{DATA_TYPE}' })` | 
+
+9. Delete Collection
+
+Command |
+--- |
+`db.{COLLECTION_NAME}.drop()` | 
+
+9. Delete Database
+
+Command |
+--- |
+`use {DATABASE_NAME}` |
+`db.dropDatabase()` | 
+
+# Reference
+
+1. Shell methods documentation - [Mongo Shell Methods](https://docs.mongodb.com/manual/reference/method/)
