@@ -9,12 +9,14 @@
     "ejs_template": "node ./scripts/ejs-template",
     "express_middleware": "node ./scripts/express-middleware",
     "express_route_mw": "node ./scripts/route-mw",
-    "dev": "node app"
+    "dev": "node app",
+    "nodedb": "node ./scripts/nodedb/app"
   },
   "author": "Ron Seminiano",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.0"
   }
 }
