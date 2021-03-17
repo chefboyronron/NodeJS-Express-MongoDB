@@ -65,3 +65,9 @@ db.on('error', (err) => {
 1. [app.js](https://github.com/chefboyronron/NodeJS-Express/blob/master/actual/scripts/nodedb/app.js)
 2. [article model](https://github.com/chefboyronron/NodeJS-Express/blob/master/actual/models/article.js)
 3. [template - ejs](https://github.com/chefboyronron/NodeJS-Express/blob/master/actual/views/nodedb/index.ejs)
+
+## The Routes
+1. / = Read Documents
+2. /add = Add Documents
+3. /update = Update Documents
+4. /delete = Remove Documents
