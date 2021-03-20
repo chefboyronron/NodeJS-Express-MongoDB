@@ -1,5 +1,3 @@
-const e = require('express');
-const article = require('../../models/article');
 let ArticleModel = require('../../models/article');
 
 class AddPage {
