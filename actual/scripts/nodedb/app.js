@@ -1,9 +1,22 @@
-let express = require('express');
+// Modules
 let path = require('path');
+let express = require('express');
 let app = express();
-let port = 3000;
-
+const bodyParser = require('body-parser');
 let mongoose = require('mongoose');
+
+//Model
+const ArticleModel = require('../../models/article');
+
+// Controlers
+const Homepage = require('./home');
+const Addpage = require('./add');
+
+// Variables initialization
+let port = 3000;
+let viewsDir = '../../views/nodedb';
+let templateEngine = 'ejs';
+
 // Connect to database
 mongoose.connect('mongodb://localhost/nodedb', {
     useNewUrlParser: true, 
@@ -21,20 +34,29 @@ db.on('error', (err) => {
     console.log(err);
 });
 
-// Include Model
-let Article = require('../../models/article');
+// Set view endige template
+app.set('view engine', templateEngine);
+app.set('views', path.join(__dirname, viewsDir));
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '../../views/nodedb'));
+// Body Parser
+let bodyparser = {
+    jsonParser: bodyParser.json(),
+    urlEncodeParser: bodyParser.urlencoded({extended: false})
+}
 
-app.get('/', (req, res, next) => {
-    // Render articles in the template
-    Article.find({}, (err, articles) => {
+// Homepage Controller
+let home = new Homepage(app);
+// Add Page Controller
+let addPage = new Addpage(app, bodyparser);
+
+// Handle not unusual routes - work around
+app.get('*', (req, res, next) => {
+    ArticleModel.find({}, (err, articles) => {
         if( err ) {
             console.log(err);
         } else {
-            res.render('../../views/nodedb/index', {
-                title: 'Articles',
+            res.render(viewsDir + '/index', {
+                title: 'Add Article',
                 articles: articles
             });
         }
